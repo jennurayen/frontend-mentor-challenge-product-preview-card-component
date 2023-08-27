@@ -1,0 +1,109 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Dark_cyan_active: hsl(158, 42%, 18%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body{
+    min-height: 100vh;
+    background: var(--Cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.wrapper .image{
+    width: 50%;
+    background: var(--White);
+}
+.wrapper .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img_one{
+    display: block;
+}
+.img_two{
+    display: none;
+}
+.wrapper .details{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px;
+    background: var(--White);
+}
+
+.details .name{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: var(--Dark_grayish_blue);
+}
+
+.details .header{
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: var(--Very_dark_blue);
+}
+.details .description{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Dark_grayish_blue);
+}
+
+.details .price{
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--Dark_cyan);
+    display: inline;
+}
+
+.details .off{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through;
+    color: var(--Dark_grayish_blue);
+    font-size: 14px;
+    margin-left: 20px;    
+}
+
+.details a{
+    text-decoration: none;
+    color: var(--White);
+    background: var(--Dark_cyan);
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+.details a:active{
+background: var(--Dark_cyan_active);
+}
+.details a img{
+    height: 14px;
+}
